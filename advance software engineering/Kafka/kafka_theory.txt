@@ -1,0 +1,10 @@
+## Kafka ##
+Video upload on YouTube -> Server sends back the response to the client an acknowledgment that I have received that video
+All the process like copyright check, converting into resolution etc happen behind the scenes
+(This process is called asycn (process happening parallely)
+
+1. Producer pushes the event in kafka queue
+2. Consumer subscribe to a topic and consume the data
+
+So any parallel work => Push it into a Kafka queue
+
