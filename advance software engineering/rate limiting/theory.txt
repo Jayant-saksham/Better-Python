@@ -1,0 +1,18 @@
+API rate limiting
+
+1. Leaky Bucket rate limiting (Video processing app -> sequence by sequence video process hoti hai)
+Constant processing (2 request per second)
+Stable traffic control
+Simple
+Have constant capacity of queue
+
+2. Token rate limiting (All operators are busy, please wait for some time -> aisa bolta hai jio operator)
+Have constant capacity of queue
+
+3. Fixed window rate limiting (Threshold)
+constant = 5 request / minute
+Request may increase in window boundary
+
+4. Sliding window log
+=> Dynamic window which get shifted (Solved the boundary issue)
+Window - 3 request/sec

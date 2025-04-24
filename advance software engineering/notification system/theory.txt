@@ -1,0 +1,13 @@
+Notification System = using Kafka (Kafka throughput is very high)
+
+Divide it into 2 type
+1. Transactional notification (P0)= single jate hai -> topic1
+2. Promotional notification (P1) = bulk me jate hai -> topic2
+
+For different channels make different queues
+ex-  Whatsapp P0 and Whatsapp P1
+ex - SMSP0 and SMSP1
+
+
+Digest logic (Extras)
+1. 30 sec = 40 photos -> in single msg send this
